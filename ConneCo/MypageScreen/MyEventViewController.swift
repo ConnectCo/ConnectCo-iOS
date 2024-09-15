@@ -19,7 +19,7 @@ class MyEventViewController: UIViewController {
         
         MyEventTableView.delegate = self
         MyEventTableView.dataSource = self
-        MyEventTableView.layer.masksToBounds = false// any value you want
+        MyEventTableView.layer.masksToBounds = true// any value you want
         MyEventTableView.layer.shadowOpacity = 0.3// any value you want
         MyEventTableView.layer.shadowRadius = 5 // any value you want
         MyEventTableView.layer.shadowOffset = .init(width: 0, height: 2)

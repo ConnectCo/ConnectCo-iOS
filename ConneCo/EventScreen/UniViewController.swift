@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class UniViewController: UIViewController {
     
@@ -41,6 +42,12 @@ class UniViewController: UIViewController {
         super.viewWillDisappear(animated)
         
         navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    @IBAction func homepage_Tapped(_ sender: Any) {
+        let uniUrl = NSURL(string: "https://www.hanyang.ac.kr/")
+        let uniSafariView: SFSafariViewController = SFSafariViewController(url: uniUrl as! URL)
+        self.present(uniSafariView, animated: true)
     }
     
     @IBAction func back_Tapped(_ sender: Any) {

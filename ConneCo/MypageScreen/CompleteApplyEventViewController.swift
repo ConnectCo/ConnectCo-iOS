@@ -19,7 +19,7 @@ class CompleteApplyEventViewController: UIViewController {
         
         CompleteApplyEventTableView.delegate = self
         CompleteApplyEventTableView.dataSource = self
-        CompleteApplyEventTableView.layer.masksToBounds = false// any value you want
+        CompleteApplyEventTableView.layer.masksToBounds = true// any value you want
         CompleteApplyEventTableView.layer.shadowOpacity = 0.3// any value you want
         CompleteApplyEventTableView.layer.shadowRadius = 5 // any value you want
         CompleteApplyEventTableView.layer.shadowOffset = .init(width: 0, height: 2)

@@ -38,7 +38,7 @@ extension EventListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return eventImages.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,10 +58,10 @@ extension EventListViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.selectionStyle = .none
         
-        cell.eventImage.image = UIImage(named: eventImages[indexPath.section])
-        cell.eventUni.text = "\(eventUnis[indexPath.section])"
-        cell.eventName.text = "\(eventNames[indexPath.section])"
-        cell.eventDate.text = "\(eventDates[indexPath.section])"
+//        cell.eventImage.image = UIImage(named: eventImages[indexPath.section])
+//        cell.eventUni.text = "\(eventUnis[indexPath.section])"
+//        cell.eventName.text = "\(eventNames[indexPath.section])"
+//        cell.eventDate.text = "\(eventDates[indexPath.section])"
         
         return cell
     }

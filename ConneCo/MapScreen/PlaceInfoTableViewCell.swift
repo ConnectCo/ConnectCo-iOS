@@ -30,19 +30,11 @@ class PlaceInfoTableViewCell: UITableViewCell {
 extension PlaceInfoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if (indexPath.section == 0) {
-            let something4 = UIStoryboard.init(name: "Mypage", bundle: nil)
-            guard let rvc = something4.instantiateViewController(withIdentifier: "MyCouponDetailVC") as? MyCouponDetailViewController else {return}
-            
-            // 화면이동
-            self.present(rvc, animated: true)
-//        } else {
-//            let something4 = UIStoryboard.init(name: "Mypage", bundle: nil)
-//            guard let rvc = something4.instantiateViewController(withIdentifier: "MyEventDetailVC") as? MyEventDetailViewController else {return}
-//            
-//            // 화면이동
-//            self.present(rvc, animated: true)
-//        }
+        let something4 = UIStoryboard.init(name: "Coupon", bundle: nil)
+        guard let rvc = something4.instantiateViewController(withIdentifier: "CouponDetailVC") as? CouponDetailViewController else {return}
+        
+        // 화면이동
+        self.present(rvc, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

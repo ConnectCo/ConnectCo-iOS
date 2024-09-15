@@ -50,7 +50,7 @@ class MyStoreViewController: UIViewController, SampleProtocol6 {
         
         MyStoreTableView.delegate = self
         MyStoreTableView.dataSource = self
-        MyStoreTableView.layer.masksToBounds = false// any value you want
+        MyStoreTableView.layer.masksToBounds = true// any value you want
         MyStoreTableView.layer.shadowOpacity = 0.3// any value you want
         MyStoreTableView.layer.shadowRadius = 5 // any value you want
         MyStoreTableView.layer.shadowOffset = .init(width: 0, height: 2)

@@ -19,7 +19,7 @@ class NewApplyCouponViewController: UIViewController {
         
         NewApplyCouponTableView.delegate = self
         NewApplyCouponTableView.dataSource = self
-        NewApplyCouponTableView.layer.masksToBounds = false// any value you want
+        NewApplyCouponTableView.layer.masksToBounds = true// any value you want
         NewApplyCouponTableView.layer.shadowOpacity = 0.3// any value you want
         NewApplyCouponTableView.layer.shadowRadius = 5 // any value you want
         NewApplyCouponTableView.layer.shadowOffset = .init(width: 0, height: 2)

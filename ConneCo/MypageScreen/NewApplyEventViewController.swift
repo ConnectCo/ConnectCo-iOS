@@ -19,7 +19,7 @@ class NewApplyEventViewController: UIViewController {
         
         NewApplyEventTableView.delegate = self
         NewApplyEventTableView.dataSource = self
-        NewApplyEventTableView.layer.masksToBounds = false// any value you want
+        NewApplyEventTableView.layer.masksToBounds = true// any value you want
         NewApplyEventTableView.layer.shadowOpacity = 0.3// any value you want
         NewApplyEventTableView.layer.shadowRadius = 5 // any value you want
         NewApplyEventTableView.layer.shadowOffset = .init(width: 0, height: 2)

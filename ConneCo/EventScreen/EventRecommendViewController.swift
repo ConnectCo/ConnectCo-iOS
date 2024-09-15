@@ -24,7 +24,7 @@ class EventRecommendViewController: UIViewController {
         
         EventRecommendTableView.delegate = self
         EventRecommendTableView.dataSource = self
-        EventRecommendTableView.layer.masksToBounds = false// any value you want
+        EventRecommendTableView.layer.masksToBounds = true// any value you want
         EventRecommendTableView.layer.shadowOpacity = 0.3// any value you want
         EventRecommendTableView.layer.shadowRadius = 5 // any value you want
         EventRecommendTableView.layer.shadowOffset = .init(width: 0, height: 2)

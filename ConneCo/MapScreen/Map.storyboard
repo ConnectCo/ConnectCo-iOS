@@ -83,7 +83,7 @@
         <!--Place Info View Controller-->
         <scene sceneID="old-gy-JCH">
             <objects>
-                <viewController storyboardIdentifier="PlaceInfoVC" id="QNp-dM-6l0" customClass="PlaceInfoViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaceInfoVC" modalPresentationStyle="overCurrentContext" id="QNp-dM-6l0" customClass="PlaceInfoViewController" customModule="ConneCo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zu-H7-MDf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,6 +163,15 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISQ-Xp-dCa">
+                                <rect key="frame" x="146.66666666666666" y="778" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uTE-MR-SWg"/>
+                                    <constraint firstAttribute="width" constant="100" id="zcn-oo-hvj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gkS-pC-aMr"/>
                         <color key="backgroundColor" red="0.96094137430000004" green="0.9603591561" blue="0.98039489980000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -170,11 +179,13 @@
                             <constraint firstItem="blp-4U-Uk1" firstAttribute="top" secondItem="2zu-H7-MDf" secondAttribute="top" constant="37" id="Meb-z2-ryy"/>
                             <constraint firstItem="PmY-CE-qYd" firstAttribute="top" secondItem="2zu-H7-MDf" secondAttribute="top" constant="40" id="XEg-um-iBb"/>
                             <constraint firstItem="ctR-Qh-Fd9" firstAttribute="leading" secondItem="gkS-pC-aMr" secondAttribute="leading" id="YfV-HW-waI"/>
-                            <constraint firstAttribute="bottom" secondItem="ctR-Qh-Fd9" secondAttribute="bottom" id="d9U-ve-K6n"/>
                             <constraint firstItem="ctR-Qh-Fd9" firstAttribute="top" secondItem="PmY-CE-qYd" secondAttribute="bottom" constant="15" id="g8a-eT-QMU"/>
+                            <constraint firstAttribute="bottom" secondItem="ctR-Qh-Fd9" secondAttribute="bottom" id="nIO-Kb-Uvg"/>
                             <constraint firstItem="ctR-Qh-Fd9" firstAttribute="trailing" secondItem="gkS-pC-aMr" secondAttribute="trailing" id="psc-vP-T4l"/>
                             <constraint firstItem="PmY-CE-qYd" firstAttribute="leading" secondItem="gkS-pC-aMr" secondAttribute="leading" constant="24" id="qfX-Gu-Kxw"/>
+                            <constraint firstItem="ISQ-Xp-dCa" firstAttribute="centerX" secondItem="2zu-H7-MDf" secondAttribute="centerX" id="tYW-nk-NND"/>
                             <constraint firstItem="gkS-pC-aMr" firstAttribute="trailing" secondItem="blp-4U-Uk1" secondAttribute="trailing" constant="24" id="vqR-2y-XwZ"/>
+                            <constraint firstItem="gkS-pC-aMr" firstAttribute="bottom" secondItem="ISQ-Xp-dCa" secondAttribute="bottom" id="xvg-2k-QxC"/>
                         </constraints>
                     </view>
                     <connections>

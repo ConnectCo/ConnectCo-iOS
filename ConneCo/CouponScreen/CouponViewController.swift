@@ -30,6 +30,6 @@ class CouponViewController: UIViewController {
     @IBAction func enroll_Tapped(_ sender: Any) {
         guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "CouponEnrollVC") as? CouponEnrollViewController else {return}
         
-        self.navigationController?.pushViewController(rvc, animated: true)
+        self.navigationController?.pushViewController(rvc, animated: false)
     }
 }
